@@ -28,6 +28,7 @@ h3{color: rgb(22, 22, 88);
     font-size: 450%;
     text-align: center;
     font-style: italic;
+    padding: 25px;
 }
 
 h4{color: rgba(46, 46, 53, 0.822);
@@ -113,17 +114,6 @@ header h1{
     padding: 30px;
 }
 
-
-/** SECCIONES - ARTICULOS **/
-
-.nombreDePagina{
-    background-color: #001233;
-    color: #979dac;
-    padding: 40px;
-    margin: 0px;
-    text-align: center;
-}
-
 .contenedorArticulos{
     display: flex;  
     flex-direction: row;
@@ -140,55 +130,7 @@ header h1{
 
 
 
-.formulario{
-    font-size: 2rem;
-    padding: 30px;
-}
-
-.formulario p{
-    font-size: 2rem;
-    line-height: normal;
-}
-
-.formPropio{
-    width: 300px;
-    height: 40px;
-    
-}
-
-.seleccionadorFormulario{
-    font-size: 1.5rem;
-    width: 300px;
-    height: 40px;
-}
-
-.especialidadForm{
-    padding-top: 10px;
-}
-
-
-.imagenNoRepeat{
-    background-color: rgba(0,0,0,0.8);
-    background-image: url("../Multimedia/bgImgContacto.jpeg");
-    background-repeat: no-repeat;
-    background-size: unset;
-    background-size: cover;
-    filter:brightness(0.4);
-}
-
-
-.sinMarginPadding{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
-
-
-.imgFluida{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
+/** NOSOTROS **/
 
 
 .textoPresentacion{
@@ -203,7 +145,7 @@ header h1{
     }
 
 .textoPresentacionInverso{
-    background-color: #000307; 
+    background-color: #001233; 
     color: #ffffff; 
     text-align: justify;
     padding: 30px;
@@ -240,17 +182,103 @@ header h1{
     }
 
 
+
+/** CONOCENOS **/
+
+
+.formulario{
+    font-size: 2rem;
+    padding: 30px;
+}
+
+.formulario p{
+    font-size: 2rem;
+    line-height: normal;
+}
+
+.formPropio{
+    width: 300px;
+    height: 40px;
+    
+}
+
+.seleccionadorFormulario{
+    font-size: 1.5rem;
+    width: 300px;
+    height: 40px;
+}
+
+.especialidadForm{
+    padding-top: 10px;
+}
+
+
+/** ESPECIALIDADES **/
+
+.cuadroEspecialidad{
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    margin: 50px;
+    padding: 60px;
+    height: 200px;
+    text-align: center;
+}
+
+.cuadroEspecialidad:hover{
+    background-color: #bdc3c7;
+    color: #2c3e50;
+}
+
+/** CLIENTES Y ALIANZAS **/
+
+.logosClientes{
+    width: 300px;
+    height: 300px;
+}
+
+/** SECCIONES - ARTICULOS **/
+
+.nombreDePagina{
+    background-color: #001233;
+    color: #979dac;
+    padding: 40px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+
+.imagenNoRepeat{
+    background-color: rgba(0,0,0,0.8);
+    background-image: url("../Multimedia/bgImgContacto.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(0.4);
+    background-position: center center;
+}
+
+
+.sinMarginPadding{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+.imgFluida{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.textoArticulos{
+    text-align: justify;
+    padding: 20px;
+}
+
 .parrafoGris {color:#33415c;
     text-align: justify;
     font-weight: 400;}
-
-
-.listaGrande {font-size: 4rem;
-    font-weight: bold;
-    list-style-type: square;
-    background-color: #979dac;}
-
-.listaGrande p{font-size: 2.5rem;}
 
 
 /** FOOTER **/
