@@ -48,7 +48,7 @@
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            <button class="btn btn-outline-success" type="submit" id="fondoSearch">Buscar</button>
                         </form>
                     </div>
                 </div>
@@ -59,31 +59,33 @@
             <section class="row">
                 <form action="" class="formulario col-lg-6 col-md-12 col-sm-12">
                     <p>Ingrese sus datos a los fines de brindarle una optima atencion</p>   
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control formPropio" placeholder="Ingrese su nombre" name="nombre"> <br>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control formPropio" placeholder="Ingrese su apellido" name="apellido"> <br>
-                    <label for="celular">Celular</label>
-                    <input type="text" class="form-control formPropio" placeholder="Ingrese su numero" name="celular"> <br>
-                    <label for="correo">Correo </label>
-                    <input type="correo" class="form-control formPropio" placeholder="Ingrese su email" name="correo"> <br>
+                    <section class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12"><label for="nombre" class="form-label">Nombre</label><input type="text" class="form-control placeHolderForm" placeholder="Ingrese su nombre" name="nombre"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12"><label for="apellido">Apellido</label><input type="text" class="form-control placeHolderForm" placeholder="Ingrese su apellido" name="apellido"></div>
+                    </section>   
+                    <section class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12"> <label for="celular">Celular</label><input type="text" class="form-control placeHolderForm" placeholder="Ingrese su numero" name="celular"> </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12"><label for="correo">Correo </label>
+                    <input type="correo" class="form-control placeHolderForm" placeholder="Ingrese su email" name="correo"></div>
+                    </section>
                     
-                    <p>¿Por que via prefiere ser contactado?</p>
-                    <input class="form-check-input" type="checkbox" value="ce" name="ce">Correo Electronico
-                    <input class="form-check-input" type="checkbox" value="rp" name="rp">Reunion Presencial
-                    <br>
-                    <input class="form-check-input" type="checkbox" value="lt" name="lt">Llamada telefonica
+                    <p class="parrafoContacto">¿Por que via prefiere ser contactado?</p>
+                    <input class="form-check-input" type="checkbox" value="ce" name="ce">Correo 
+                    <input class="form-check-input" type="checkbox" value="rp" name="rp">Reunion
+                    <input class="form-check-input" type="checkbox" value="lt" name="lt">Llamada
                     <input class="form-check-input" type="checkbox" value="wpp" name="wpp">WhatsApp
                 
-                    <p class="especialidadForm">Area de Especialidad</p>
-                    <select name="cursoAnotar" id="" class="form-select seleccionadorFormulario">
-                        <option value="de">Derecho Empresarial - Societario</option>
-                        <option value="cyc">Derecho Civil y Comercial</option>
-                        <option value="dl">Derecho Laboral</option>
-                        <option value="adm">Derecho Administrativo</option>
-                    </select> 
-                    <p class="especialidadForm">Ingrese brevemente su consulta</p>   
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <p class="parrafoContacto">Area de Especialidad</p>
+                    <div class= "row align-self-center">
+                        <select name="areasContacto" class="form-select col justify-content-center" id="seleccionadorFormulario">
+                            <option value="de">Derecho Empresarial - Societario</option>
+                            <option value="cyc">Derecho Civil y Comercial</option>
+                            <option value="dl">Derecho Laboral</option>
+                            <option value="adm">Derecho Administrativo</option>
+                        </select> 
+                    </div>
+                    <p class="parrafoContacto">Ingrese su consulta</p>   
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
                     <br>
                     <label class="btn btn-primary" for="btn-check-2">Empezar de Nuevo</label>
                     <label class="btn btn-primary" for="btn-check-2">Enviar consulta</label>
@@ -94,24 +96,24 @@
         </main>
 </body>
 
-
-
 <footer class="containerfluid">
+    <div class="footer-copyright text-center py-3 copyright">Estudio Juridico Albar Diaz & Asociados</div>
     <div class="row justify-content-around">
-        <iframe class="col-lg-3 col-md-12 col-sm-12 col align-self-center mapaFooter" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.734227562447!2d-64.21150338530515!3d-31.44898290497532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2459f280393%3A0x16a1d33dc40e4312!2sDr.%20Gustavo%20Brandan%20900%2C%20X5016BZJ%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1631745372465!5m2!1ses!2sar" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section class="col-lg-3 col-md-12 col-sm-12 col align-self-center">
+        <h5 class="text-uppercase"><a href=../index.html class="nav-link active" aria-current="page" href="#">INICIO</a></h5>
+        <h5 class="text-uppercase"><a href=../Pages/nosotros.html class="nav-link active" aria-current="page" href="#">NOSOTROS</a></h5>
+        <h5 class="text-uppercase"><a href=../Pages/especialidades.html class="nav-link active" aria-current="page" href="#">ESPECIALIDADES</a></h5>
+        <h5 class="text-uppercase"><a href=../Pages/clientes.html class="nav-link active" aria-current="page" href="#">CLIENTES & ALIANZAS</a></h5>
+        <h5 class="text-uppercase"><a href=../Pages/contacto.html class="nav-link active" aria-current="page" href="#">CONTACTO</a></h5></section>
         <section class="col-lg-3 col-md-12 col-sm-12 col align-self-center infoFooter">
-            <p>Estudio Juridico Albar Diaz & Asoc.
-            <br> Gustavo Brandan 918  
-            <br>Tel. 3512485695 
-            <br>@EstudioJuridicoAlbarDiaz 
-            <br>Copyright all rights reserved</p>
         </section>
-        <section class="col-lg-3 col-md-12 col-sm-12 col align-self-center text-center">
-            <a href="https://facebook.com/nachoalbardiaz"><img class="remove-bg" src="../Multimedia/facebook.jpg" alt="FACE" width="30px" height="30px"></a>
-            <a href="https://instagram.com/nachoalbardiaz"><img class="remove-bg" src="../Multimedia/instagram.png" alt="INSTA" width="30px" height="30px"></a>
-            <a href="https://twitter.com/nachoalbardiaz"><img class="remove-bg" src="../Multimedia/twitter.jpg" alt="TW" width="30px" height="30px" ></a>
-            <a href=https://wa.me/5493512485695><img class="remove-bg" src="../Multimedia/wapp.jpg" alt="WAPP" width="30px" height="30px"></a>
+        <section class="col-lg-3 col-md-12 col-sm-12 col align-self-end text-center">
+            <a href="https://facebook.com/nachoalbardiaz"><img class="remove-bg imagenFooter" src="../Multimedia/facebook.jpg" alt="FACE" width="30px" height="30px"></a>
+            <a href="https://instagram.com/nachoalbardiaz"><img class="remove-bg imagenFooter" src="../Multimedia/instagram.png" alt="INSTA" width="30px" height="30px"></a>
+            <a href="https://twitter.com/nachoalbardiaz"><img class="remove-bg imagenFooter" src="../Multimedia/twitter.jpg" alt="TW" width="30px" height="30px" ></a>
+            <a href=https://wa.me/5493512485695><img class="remove-bg imagenFooter" src="../Multimedia/wapp.jpg" alt="WAPP" width="30px" height="30px"></a>
         </section>
     </div>
+    <div class="footer-copyright text-center py-3 copyright">© 2020 Copyright  all rights reserved</div>
 </footer>
 </html>
