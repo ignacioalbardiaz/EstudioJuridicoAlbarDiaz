@@ -26,7 +26,7 @@ h2{color: #001233;
 }
 
 h3{color: rgb(22, 22, 88);
-    font-size: 450%;
+    font-size: 300%;
     text-align: center;
     font-style: italic;
     padding: 25px;
@@ -43,8 +43,8 @@ p{font-size: 170%;
     line-height: 30px;
 }
 
-header{background-color: #8a8a8a;);
-    color:#001845;
+header{background-color: #8a8a8a;
+    color: #001845;
 }
 
 a:visited {color: #002855;
@@ -80,16 +80,6 @@ header h1{
     padding: 0px;
 }
 
-.contenedorHeader{
-    height: 100px;
-    display: flex;  
-    flex-direction: row;
-    flex-wrap: wrap;    
-    justify-content: flex-start ; 
-    align-items: center;
-    margin: 5px 5px;
-}
-
 #fondoSearch{
     background-color:  #e0dac6;
     border-color: white;
@@ -101,12 +91,23 @@ header h1{
     color:  #e0dac6;
     transition: all 800ms;
 }
+
+.contenedorHeader{
+    height: 100px;
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;    
+    justify-content: flex-start ; 
+    align-items: center;
+    margin: 5px 5px;
+}
+
     .contenedorHeaderHijo img{
         width: 90px;
     }
 
     .contenedorHeaderHijo img:hover{
-        transform: skew(5deg,5deg);
+        transform: scale(0.9);
     }
 
     .navPropio{
@@ -121,9 +122,21 @@ header h1{
 
 /** INDEX ***/
 
-#frasePrincipal {
-    background-color: #8a8a8a;
-    padding: 30px;
+#frasePrincipal {;
+    padding: 20px;
+}
+
+.linea{
+    height: 5px;
+    background: rgb(22, 22, 88);
+}
+
+.linea2{
+    display: flex;
+    height: 2px;
+    background: #e0dac6;
+    align-items: flex-end;
+    align-self: flex-end;
 }
 
 .contenedorArticulos{
@@ -140,14 +153,15 @@ header h1{
         padding: 30px;
     }
 
-
+.tituloArticulos:hover{
+    color:#002855;
+}
 
 /** NOSOTROS **/
 
 
 .textoPresentacion{
     background-color: #ffffff;
-    color: #001233;
     text-align: justify;
     padding: 30px;
     font-style: oblique;
@@ -156,11 +170,21 @@ header h1{
     letter-spacing: 0.5px;
     }
 
+.textoPrimero{
+    color: #002855;
+}
+
+.textoIntermedio{
+    color: #fc0e0e;
+    padding-top: 30px;
+}
+
 .textoPresentacionInverso{
     background-color: #001233; 
     color: #ffffff; 
     text-align: justify;
     padding: 30px;
+    padding-bottom: 5px;
     font-style:initial;
     font-size: 2rem;
     line-height:normal;
@@ -170,10 +194,25 @@ header h1{
 
 .cartaPersonal{
     padding: 30px;
-    margin: 40px;}
+    margin: 40px;
+}
 
 .cardImagen{
     border-radius: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+.cardImagen:hover{
+    -webkit-filter: none;
+    filter: none;
+    -webkit-transition: -webkit-filter .5s;
+    transition: -webkit-filter .5s;
+    transition: filter .5s;
+    transition: filter .5s, -webkit-filter .5s;
 }
 
 .textoCartasPresentacion{
@@ -209,6 +248,12 @@ header h1{
 .cuadroEspecialidad:hover{
     background-color: #bdc3c7;
     color: #2c3e50;
+    cursor: pointer;
+}
+
+.listaEspecialidades{
+    font-size: 1.5rem;
+    color: #2c3e50;
 }
 
 /** CLIENTES Y ALIANZAS **/
@@ -239,9 +284,14 @@ header h1{
 }
 
 .parrafoContacto{
-    padding: 10px;
+    padding: 20px;
+    margin: 10px;
     text-align: center;
     font-size: 3rem;
+}
+
+.checkbox{
+    margin-left: 30px
 }
 
 .select{
@@ -266,12 +316,12 @@ header h1{
 }
 
 .imagenNoRepeat{
-    background-color: rgba(0,0,0,0.8);
-    background-image: url("../Multimedia/bgImgContacto.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     filter:brightness(0.4);
-    background-position: center center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
 .sinMarginPadding{
@@ -280,22 +330,22 @@ header h1{
     border: 0px;
 }
 
-
 .imgFluida{
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
 
-.textoArticulos{
-    text-align: justify;
-    padding: 20px;
+.tituloPaginasArticulos{
+    font-size: 4rem;
+    font-style: oblique;
 }
 
-.parrafoGris {color:#33415c;
+.textoArticulos{
     text-align: justify;
-    font-weight: 400;}
-
+    padding: 30px;
+    font-size: 2rem;
+}
 
 /** FOOTER **/
 
@@ -305,36 +355,14 @@ footer{background-color: #8a8a8a;;}
 .imagenFooter{
     margin:10px;
     text-align: start;
-    margin-bottom: 15px;
+    margin-bottom: 15px;;
 }
 
-footer iframe{
-    margin: 5px;
-    padding: 5px;
-}
 
-.mapaFooter{
-    width: 250px; 
-    height: 150px;
-    transition: all 4s;
-}
-
-.mapaFooter:hover{
-    width: 300px; 
-    height: 180px;
-}
-
-.infoFooter{
-    text-align: justify;
-    padding: 10px;
-    font-size: 70%;
-    color: #001233;
-}
-
-.copyright{
+.estudioFooter{
+    color: #8a8a8a;
     background-color: #001233;
-    color: #979dac;
-    font-size: medium;
+    font-size: 1.5rem;
     font-style: bold;
 }
 
@@ -344,7 +372,7 @@ footer iframe{
 }
 
 .remove-bg:hover{
-    transform: rotate(45deg);
+    transform: scale(1.2)
 }
 
 
