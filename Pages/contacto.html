@@ -57,24 +57,27 @@
             <h1 class="nombreDePagina">CONTACTO</h1>
             <section class="row">
                 <form action="" class="formulario col-lg-6 col-md-12 col-sm-12">
-                    <p>Ingrese sus datos a los fines de brindarle una optima atencion</p>   
+                    <p class="parrafoContacto">Ingrese sus datos a los fines de brindarle una óptima atención</p>   
                     <section class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12"><label for="nombre" class="form-label">Nombre</label><input type="text" class="form-control placeHolderForm" placeholder="Ingrese su nombre" name="nombre"></div>
-                        <div class="col-lg-6 col-md-6 col-sm-12"><label for="apellido">Apellido</label><input type="text" class="form-control placeHolderForm" placeholder="Ingrese su apellido" name="apellido"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12"><label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control placeHolderForm" placeholder="Ingrese su nombre" name="nombre"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12"><label for="apellido">Apellido</label>
+                            <input type="text" class="form-control placeHolderForm" placeholder="Ingrese su apellido" name="apellido"></div>
                     </section>   
                     <section class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12"> <label for="celular">Celular</label><input type="text" class="form-control placeHolderForm" placeholder="Ingrese su numero" name="celular"> </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12"> <label for="celular">Celular</label>
+                            <input type="text" class="form-control placeHolderForm" placeholder="Ingrese su numero" name="celular"> </div>
                         <div class="col-lg-6 col-md-6 col-sm-12"><label for="correo">Correo </label>
-                    <input type="correo" class="form-control placeHolderForm" placeholder="Ingrese su email" name="correo"></div>
+                            <input type="correo" class="form-control placeHolderForm" placeholder="Ingrese su email" name="correo"></div>
                     </section>
                     
-                    <p class="parrafoContacto">¿Por que via prefiere ser contactado?</p>
-                    <input class="form-check-input checkbox" type="checkbox" value="ce" name="ce">Correo 
-                    <input class="form-check-input checkbox" type="checkbox" value="rp" name="rp">Reunion
-                    <input class="form-check-input checkbox" type="checkbox" value="lt" name="lt">Llamada
-                    <input class="form-check-input checkbox" type="checkbox" value="wpp" name="wpp">WhatsApp
+                    <p class="parrafoContacto">¿Por qué vía prefiere ser contactado?</p>
+                    <input class="form-check-input checkbox" type="checkbox" value="ce" name="ce" id="flexCheckDefault">Correo 
+                    <input class="form-check-input checkbox" type="checkbox" value="rp" name="rp" id="flexCheckDefault">Reunion
+                    <input class="form-check-input checkbox" type="checkbox" value="lt" name="lt" id="flexCheckDefault">Llamada
+                    <input class="form-check-input checkbox" type="checkbox" value="wpp" name="wpp" id="flexCheckDefault">WhatsApp
                 
-                    <p class="parrafoContacto">Area de Especialidad</p>
+                    <p class="parrafoContacto">Área de Especialidad</p>
                     <div class= "row align-self-center">
                         <select name="areasContacto" class="form-select col justify-content-center" id="seleccionadorFormulario">
                             <option value="de">Derecho Empresarial - Societario</option>
@@ -83,14 +86,13 @@
                             <option value="adm">Derecho Administrativo</option>
                         </select> 
                     </div>
-                    <p class="parrafoContacto">Ingrese su consulta</p>   
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="4"></textarea>
-                    <br>
+                    <p class="parrafoContacto" id="textAreaContacto">Ingrese su consulta</p>   
+                    <textarea id="form7" class="md-textarea form-control" rows="3"></textarea>
                     <label class="btn btn-primary" for="btn-check-2">Empezar de Nuevo</label>
                     <label class="btn btn-primary" for="btn-check-2">Enviar consulta</label>
                 </form>
-                <div class="col-lg-6 col-md-12 col-sm-12 imagenNoRepeat sinMarginPadding">
-                    <img class="w-100 img-fluid imgFluida" src="../Multimedia/bgImgContacto.jpeg" alt="ImgBg">
+                <div class="col-lg-6 col-md-12 col-sm-12 container-fluid imagenNoRepeat">
+                    <img class="w-100 img-fluid" style="width:auto" src="../Multimedia/bgImgContacto.jpeg" alt="ImgBg">
                 </div>
             </section>
         </main>

@@ -46,11 +46,6 @@ p{font-size: 170%;
 a:visited {color: #002855;
 }
 
-section{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-}
 
 
 /** HEADER **/
@@ -60,10 +55,6 @@ header{background-color: #8a8a8a;
     padding-top: 20px;
 }
 
-header h1{
-    margin: 0px;
-    padding: 0px;
-}
 
 #fondoSearch{
     background-color:  #e0dac6;
@@ -88,7 +79,7 @@ header h1{
 
 #navPropio ul li a:hover{
     color: #FFFFF0;
-    }
+}
 
 /** INDEX ***/
 
@@ -238,7 +229,6 @@ header h1{
 .formulario{
     font-size: 2rem;
     padding: 30px;
-    text-align: center;
 }
 
 .formulario p{
@@ -248,8 +238,6 @@ header h1{
 
 .placeHolderForm{
     font-size: 1.5rem;
-    width: 280px;
-    height: 40px;
     
 }
 
@@ -261,12 +249,12 @@ header h1{
 }
 
 .checkbox{
-    margin-left: 35px
+    margin-left: 40px
 }
 
 .select{
     text-align: center;
-    }
+}
 
 #seleccionadorFormulario{
     font-size: 1.5rem;
@@ -316,6 +304,13 @@ header h1{
     text-align: justify;
     padding: 30px;
     font-size: 2rem;
+}
+
+.textoArticulosAdentro{
+    text-align: justify;
+    padding: 10px;
+    font-size: 2rem;
+    margin:15px;
 }
 
 /** FOOTER **/
