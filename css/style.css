@@ -37,13 +37,16 @@ h4{color: rgba(46, 46, 53, 0.822);
 }
 
 h5{text-align:start;
+    color: #002855;
 }
+
+.link{color: #002855}
 
 p{font-size: 170%;
     line-height: 30px;
 }
 
-a:visited {color: #002855;
+a{color: #002855;
 }
 
 
