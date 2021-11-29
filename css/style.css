@@ -249,7 +249,7 @@ header{background-color: #8a8a8a;
 }
 
 .checkbox{
-    margin-left: 40px
+    margin-left: 25px
 }
 
 .select{
@@ -359,4 +359,4 @@ footer{background-color: #8a8a8a;;}
     h3{font-size: 2rem}
     p{font-size: 1,5rem}
     .nombreDePagina{font-size: 3rem;}
-    #navPropio{letter-spacing: 1px; padding-right: 0px; font-size: 1.5rem;}}
+    #navPropio{letter-spacing: .5px; padding-right: 0px; font-size: 1.5rem;}}
